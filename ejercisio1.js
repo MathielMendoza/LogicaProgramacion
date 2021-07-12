@@ -1,4 +1,7 @@
-/*Como hacerlo:
+/*
+Enunciado:
+Dado un numero imprimir en pantalla su tabla de multiplicar
+Como hacerlo:
 -Funcion con parametro "numero"
 -Variable con texto encabezado
 -Bucle del 1 al 10.
