@@ -1,15 +1,12 @@
-
-function IsBalancedString(s) {
-    let result=0;
-    let letters = s.split("");
-    let countLetter = {};
-    for(let letter of letters){
-        countLetter[letter] ? countLetter[letter]++ :countLetter[letter] = 1
-        result = countLetter[letter]
+const IsBalancedString = (s) => {
+    const letters = s.split("");
+    let result = 0;
+    let letterCount = {};
+    for (let letter of letters) {
+        letterCount[letter] ? letterCount[letter]++ : letterCount[letter] = 1;
+        result = letterCount[letter]
     }
-    console.log(countLetter)
-    countLetter['a'] === countLetter['c'] && countLetter['b'] === countLetter['d']  ? console.log("True") : console.log("False")
+    return letterCount.a === letterCount.c && letterCount.b === letterCount.d ? true : false;
 }
-
-IsBalancedString("abcd")
-IsBalancedString("aaabbccdd")
+console.log(IsBalancedString("abcd"))
+console.log(IsBalancedString("aaabbccdd"))
