@@ -7,13 +7,13 @@ Como hacerlo:
 -Bucle del 1 al 10.
 -Concatenar a la variable string con multiplicacion y su resultado
 */
-function tablaMulti(number){
-let result = `# Tabla del ${number} #`;
-for (let i = 1; i<= 10;i++){
-    let multi = (i*number)
-    result += `\n${number} x ${i} = ${multi} `
-}
-return result;
+
+const multiplicationTable = (number= 0) => {
+    let result = `# Table of ${number} #`;
+    for (let i = 1; i <= 10; i++) {
+        result += `\n${number} * ${i} = ${number*i}`
+    }
+    return result;
 }
 
-console.log(tablaMulti(8))
+console.log(multiplicationTable(2))

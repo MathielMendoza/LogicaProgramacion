@@ -8,10 +8,8 @@ Como hacerlo:
 -Devolver string que responda a la pregunta del enunciado
  */
 
-function tantoPorCiento(porcentaje,numero){
-
-    let operacion = (numero * (numero/ 100))
+const porcentaje = (porcentaje, numero) => {
+    let operacion = (porcentaje * (numero / 100))
     return `El ${porcentaje}% de ${numero} es: ${operacion}`
 }
-
-console.log(tantoPorCiento(50,50))
+console.log(porcentaje(5, 100))

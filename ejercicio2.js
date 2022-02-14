@@ -8,15 +8,5 @@ Como hacerlo:
 -Unir el array de letras en un string y comparar con el parametro
 */
 
-function palindromo(texto) {
-    let textoInvertido = texto
-        .split('')
-        .reverse()
-        .join('');
-    textoInvertido === texto
-        ? console.log("True")
-        : console.log("False")
-    return (textoInvertido === texto)
-}
-
-console.log("Es un palindromo? " + palindromo("bob"))
+const palindrome = (text) => text === text.split('').reverse().join('');
+console.log('is it a palindrome? ' + palindrome('bobe'));

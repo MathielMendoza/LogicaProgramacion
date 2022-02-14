@@ -8,17 +8,19 @@ Como hacerlo:
 -Crear una variable para guardar la cadena invertida
 -Bucle que recorrar el string y guarde los caracteres en la variable
 */
-function invertir(texto){
-    let invertido ="";
-    for (let letra of texto){ //for of para obtener el valor del indice
-        invertido = letra + invertido // concatena la letra nueva al inicio
+const reverseText = (text) => {
+    let result = "";
+    for (let letter of text) { //for of para obtener el valor del indice
+        result = letter + result // concatena la letra nueva al inicio
     }
-    return invertido;
+    return result;
 }
 
 //con metodos
-function invertirMetodo(texto){
-    return texto.split("").reverse().join('')
+const reverseTextMethod = (text) => {
+    return text.split('').reverse().join('');
 }
-console.log("Invertido con estructura de control: " +invertir("gerson"));
-console.log("Invertido con Metodo: " +invertirMetodo("gerson"));
+
+console.log("Invertido con estructura de control: " + reverseText("gerson"));
+console.log("Invertido con Metodo: " + reverseTextMethod("gerson"));
+
